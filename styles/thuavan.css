@@ -36,6 +36,27 @@ header{
 h1{
 padding: 0 5px 0 5px;
 }
+h2 {
+    position: relative;
+    margin: 10px;
+  }
+  
+  h2:after {
+
+    content: '';
+    display: block;
+    width: 50px; /* Điều chỉnh chiều rộng của dòng sau */
+    height: 2px; /* Điều chỉnh chiều cao của dòng sau */
+    background-color: #333; /* Điều chỉnh màu sắc của dòng sau */
+    position: absolute;
+    top: 100%; /* Di chuyển dòng sau xuống dưới phần tử h2 */
+    left: 0;
+    border-bottom: 1px solid #333; /* Điều chỉnh chiều rộng và màu sắc của gạch chân */
+    display: inline-block; /* Để gạch chân chỉ chiếm chiều rộng của nội dung h2 */
+    padding-bottom: 5px; /* Điều chỉnh khoảng cách giữa văn bản và gạch chân */
+  }
+
+  
 nav ul, li {
     margin: 10px;
     display: flex;
