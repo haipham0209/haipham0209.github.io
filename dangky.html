@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Của Hàng Tạp Hóa Thừa Vân</title>  
+    <link rel="stylesheet" href="styles/dangky.css">
+</head>
+<body>
+    <header>
+        <h1><a href="thuavan.html"><img src="./images/Untitled.png" alt="logo" width="125"></a></h1>    
+        <nav class="nav-menu">
+            <ul>
+                <li><label for="search">TÌM KIẾM</label></li>
+                <input id="timkiem" type="search" placeholder="Nhập tên sản phẩm ở đây">
+                <a href="thuavan.html"><li>TRANG CHỦ</li></a>
+                <li><a target="_blank" href="https://www.google.com/maps/place/C%E1%BB%ADa+H%C3%A0ng+T%E1%BA%A1p+H%C3%B3a+Th%E1%BB%ABa+V%C3%A2n/@13.736501,109.0825916,17z/data=!3m1!4b1!4m6!3m5!1s0x316f118e939df8e5:0x920162b8af53ec8f!8m2!3d13.736501!4d109.0851665!16s%2Fg%2F11b67gdbds?entry=ttu">BẢN ĐỒ</a></li>
+                <li><a  href="./sanpham.html"> SẢN PHẨM</a></li>
+                <li><a href="#">THÔNG TIN CỬA HÀNG</a></li>
+                <li><a href="#">ĐĂNG NHẬP</a></li>
+                <li><a href="#">ĐĂNG KÝ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="https://click.ecc.ac.jp/ecc/y_arikawa/web1/kadai11_1_result.php" method="post">
+            <h2>Nhập Thông Tin Khách Hàng</h2>
+                <div>
+                    <label for="uname">Họ và Tên</label><br>
+                    <input type="text" name="uname"required placeholder="VD: ">
+                </div>                
+                <div>
+                    <label for="mail">Địa chỉ Gmail</label><br>
+                    <input type="email" name="mail" id="mail"required placeholder="例:haiuong@">
+                </div>
+                <div>
+                    <label for="password">Mật Khẩu</label><br>
+                    <input type="password" name="password" id="password" required placeholder="8文字以上の英数字">
+                </div>
+                <div>
+                    <label for="confirm_password">Xác Nhận Mật Khẩu</label>
+                    <input type="password" name="confirm_password" id="confirm_password" required placeholder="8文字以上の英数字">
+                </div>
+                <div>
+                    <label for="tel">Số Điện Thoại</label>
+                    <input type="tel" name="tel" id="tel" required placeholder="000-0000-0000">
+                </div>
+                <div>
+                    <label for="address">Địa Chỉ</label>
+                    <input type="text" name="address" id="address" required placeholder="大阪市００区００番地">
+                </div>
+                <div>
+                    <label for="checkDM"></label>
+                    <input type="checkbox" name="checkDM" id="checkDM" value="1">Nhận thư khuyến mãi
+                </div>
+                <div>
+                    <button type="submit" id="submit1">Đăng ký</button>
+                </div>            
+        </form>
+        <div class="scroll-top"> <p><a href="#"><img src="images/top_button.png" width="50" height="50" alt="Scroll Top"></a></p></div>
+    </main>
+    <footer>
+        <a href="thuavan.html"><img src="./images/Untitled.png" alt="logo" width="200" height="128"></a>
+        <div class="sns-icons">
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Dvi"><img src="images/twitter.png" alt="twitter" width="32"></a>
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Dvi"><img src="images/facebook.png" alt="facebook" width="32"></a>
+            <a href="https://www.instagram.com/explore/tags/instafa/"><img src="images/instagram.png" alt="instagram" width="32"></a>
+          </div>
+        <small> Coppyright&commat; ThuaVan. All Rights Reserved.</small>
+    </footer>
+</body>
+</html>
