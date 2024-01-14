@@ -55,13 +55,6 @@ h2 {
     display: inline-block; /* Để gạch chân chỉ chiếm chiều rộng của nội dung h2 */
     padding-bottom: 5px; /* Điều chỉnh khoảng cách giữa văn bản và gạch chân */
   }
-  @media screen and (max-width: 768px) {
-    body {
-      font-size: 14px;
-    }
-    /* Thêm các điều chỉnh kiểu dáng khác tùy thuộc vào nhu cầu của bạn */
-  }
-  
 nav ul, li {
     margin: 10px;
     display: flex;
