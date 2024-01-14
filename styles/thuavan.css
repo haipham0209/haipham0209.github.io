@@ -95,8 +95,7 @@ footer{
     font-weight: bold;
 }
 .search1 {
-    border-radius: 15px;
-    border: 15px solid #ccc;
+    border-radius: 20px;
     padding: 5px;
     /* Thêm các thuộc tính kiểu khác nếu cần */
 }
