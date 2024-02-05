@@ -1,22 +1,5 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Retrieve username and password from the form submission
-    $submittedUsername = $_POST["username"];
-    $submittedPassword = $_POST["password"];
 
-    // Hardcoded username and password
-    $validUsername = "abc";
-    $validPassword = "123";
-
-    // Check if submitted credentials match hardcoded values
-    if ($submittedUsername == $validUsername && $submittedPassword == $validPassword) {
-        // Successful login
-        header("Location: productManage.php");
-    } else {
-        // Display an error message if credentials are incorrect
-        echo "Tên đăng nhập hoặc mật khẩu không chính xác!";
-    }
-}
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -24,7 +7,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <title>Của Hàng Tạp Hóa Thừa Vân</title>  
     <link rel="stylesheet" href="styles/All.css">
-    <link rel="stylesheet" href="styles/login.css">
 
 </head>
 <body>
@@ -43,20 +25,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </ul>
         </nav>
     </header>
-
     <main>
-        <form action="process_login.php" method="post">
-            <label for="username">Tên đăng nhập:</label>
-            <input type="text" id="username" name="username" required>
 
-            <label for="password">Mật khẩu:</label>
-            <input type="password" id="password" name="password" required>
-
-            <input type="submit" value="Đăng nhập">
-        </form>
     </main>
-
-
     <footer>
         <a href="index.html"><img src="./images/Untitled.png" alt="logo" width="200" height="110 "></a>
         <div class="sns-icons">
