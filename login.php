@@ -7,11 +7,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Hardcoded username and password
     $validUsername = "abc";
     $validPassword = "123";
-
-    $error="";
     // Check if submitted credentials match hardcoded values
     if ($submittedUsername == $validUsername && $submittedPassword == $validPassword) {
-
         header("Location: productManage.php");
     } else {
         // Display an error message if credentials are incorrect
