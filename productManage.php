@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <title>Của Hàng Tạp Hóa Thừa Vân</title>  
     <link rel="stylesheet" href="styles/All.css">
+    <link rel="stylesheet" href="styles/prductM.css">
 
 </head>
 <body>
@@ -26,7 +27,27 @@
         </nav>
     </header>
     <main>
+<h2>
+    Hello PRODUCT MANAGER
+</h2>
+    <button id="cameraButton" onclick="startCamera()">Khởi Động Camera</button>
+    <video id="videoElement" width="400" height="300" style="display:none;"></video>
+    <script>
+        async function startCamera() {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true });
 
+                const videoElement = document.getElementById('videoElement');
+                videoElement.srcObject = stream;
+
+                videoElement.onloadedmetadata = (e) => {
+                    videoElement.play();
+                };
+            } catch (error) {
+                console.error('Không thể truy cập camera:', error);
+            }
+        }
+    </script>
     </main>
     <footer>
         <a href="index.html"><img src="./images/Untitled.png" alt="logo" width="200" height="110 "></a>

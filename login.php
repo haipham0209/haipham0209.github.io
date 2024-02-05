@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Check if submitted credentials match hardcoded values
     if ($submittedUsername == $validUsername && $submittedPassword == $validPassword) {
-        // Successful login
+
         header("Location: productManage.php");
     } else {
         // Display an error message if credentials are incorrect
@@ -45,7 +45,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </header>
 
     <main>
-        <form action="process_login.php" method="post">
+        <h2>
+            Đăng Nhập quản lý thông tin sản phẩm
+        </h2>
+        <form method="post">
             <label for="username">Tên đăng nhập:</label>
             <input type="text" id="username" name="username" required>
 
