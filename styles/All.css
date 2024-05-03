@@ -4,7 +4,7 @@
 }
 
 /* CSS cho điện thoại */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 700px) {
     /* Ẩn thanh nav mặc định trên điện thoại */
     .nav-menu {
         display: none;  
