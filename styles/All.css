@@ -4,7 +4,19 @@
 }
 
 /* CSS cho điện thoại */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 767px) {
+
+    .search1 {
+        /* Tô màu viền */
+        border: 2px solid #007bff; /* Màu viền là màu xanh dương */
+        border-radius: 5px; /* Để viền cong */
+        padding: 5px; /* Thêm padding để ô tìm kiếm trông đẹp hơn */
+        /* Kiểm soát việc zoom */
+        touch-action: manipulation; /* Ngăn chặn trượt mượt và các tác động khác */
+        -ms-touch-action: manipulation; /* Cho trình duyệt Internet Explorer/Edge */
+        -webkit-user-select: none; /* Ngăn chặn việc chọn văn bản bên trong ô tìm kiếm */
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Ngăn chặn hiệu ứng tap mặc định */
+    }
     /* Ẩn thanh nav mặc định trên điện thoại */
     .nav-menu {
         display: none;  
