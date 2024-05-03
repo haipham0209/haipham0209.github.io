@@ -66,6 +66,14 @@
 
     /*  */
 
+    .search-container input {
+        width: 100%;
+        padding: 10px;
+        margin: 0px, 5px, 0px, 5px;
+        border-radius: 10px;
+        border: 0.1px solid #bec2c6; /* Màu viền là màu xanh dương */
+      }
+
     /* CSS cho các mục trong thanh nav */
     .nav-menu ul {
         list-style: none;
@@ -92,9 +100,26 @@
     }
     
 
+    
+
     .nav-menu ul li a:hover {
         background-color: #f0f0f0;
     }
+
+
+    .logo-container {
+        flex: 0 0 auto; /* Không co giãn, không co nhỏ */
+        background-color: #76c5bf;
+        margin-bottom:2px;
+      }
+      .logoImage{
+        border-radius: 50%;
+      }
+
+
+      header{
+        border-bottom: solid #76c5bf 1.5px;
+      }
 
 
     /* Thiết kế body */
