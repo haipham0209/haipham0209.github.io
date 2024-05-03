@@ -7,14 +7,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Hardcoded username and password
     $validUsername = "abc";
     $validPassword = "123";
-
     // Check if submitted credentials match hardcoded values
     if ($submittedUsername == $validUsername && $submittedPassword == $validPassword) {
-
         header("Location: productManage.php");
     } else {
         // Display an error message if credentials are incorrect
-        echo "Tên đăng nhập hoặc mật khẩu không chính xác!";
+        $error = "Mật khẩu không chính xác";
     }
 }
 ?>
@@ -54,7 +52,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <label for="password">Mật khẩu:</label>
             <input type="password" id="password" name="password" required>
-
+            <?php
+            // Hiển thị thông báo lỗi nếu có
+            if (!empty($error)) {
+                echo "<p style='color: red;'>$error</p>";
+                $error="";
+            }
+            ?>
             <input type="submit" value="Đăng nhập">
         </form>
     </main>
