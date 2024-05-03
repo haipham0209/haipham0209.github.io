@@ -1,76 +1,114 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+.menu-toggle {
+    display: none;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-}
-body {
-    font-family: Arial, sans-serif;
-    /* background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-} */
-}
-ul{
-    list-style: none;
-}
-img{
-    border: none;
-    vertical-align: top;
-}
-a:link{
-    text-decoration: none;
-    /* color: #ff0000 */
+/* CSS cho điện thoại */
+@media only screen and (max-width: 767px) {
+    /* Ẩn thanh nav mặc định trên điện thoại */
+    .nav-menu {
+        display: none;  
+    }
+    /* Hiển thị thanh nav khi được kích hoạt */
+    .menu-toggle.active + .nav-menu {
+        display: block;
+    }
+    /* Giao diện dấu 3 gạch */
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu-icon {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        position: relative;
+    }
+
+    .menu-icon::before,
+    .menu-icon::after {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        position: absolute;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .menu-icon::before {
+        top: -8px;
+    }
+
+    .menu-icon::after {
+        top: 8px;
+    }
+
+    /* Khi nút được nhấp vào, hiển thị menu */
+    .menu-toggle.active .menu-icon {
+        background-color: transparent;
+    }
+
+    .menu-toggle.active .menu-icon::before {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-toggle.active .menu-icon::after {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /*  */
+
+    /* CSS cho các mục trong thanh nav */
+    .nav-menu ul {
+        list-style: none;
+    }
+
+    .nav-menu ul li {
+        margin-bottom: 0; /* Loại bỏ margin dưới */
+    }
+    
+    .nav-menu ul li:last-child a {
+        border-bottom: none; /* Loại bỏ gạch chân của phần tử cuối cùng */
+    }
+    
+    .nav-menu ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 15px 15px;
+        display: flex; /* Sử dụng flexbox để căn chỉnh văn bản giữa */
+        justify-content: left; /* Căn giữa theo chiều ngang */
+        align-items: center; /* Căn giữa theo chiều dọc */
+        transition: background-color 0.3s ease;
+        border-bottom: solid rgb(165, 165, 173) 1px;
+    }
+    
+
+    .nav-menu ul li a:hover {
+        background-color: #f0f0f0;
+    }
+
+
+    /* Thiết kế body */
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Thiết kế footer */
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
 }
 
-a:hover{
-    color: green;
-}
-header{
-    padding-left: 5%;
-    padding-right: 5%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #a7d4ec;
-}
-nav ul, li {
-    margin: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    font-weight:  bold;
-}
-main{
-    max-width: 1200px;
-    margin: 0 auto 0 auto;
-    min-height: 480px;
-}
 
-footer img{
-    padding-top: 5px;
-}
-footer{
-    width: 100%;
-    padding: 0;
-    background-color: #a7d4ec;
-    text-align: center;
-}
-.sns-icons{
-    width: 100%;
-}
-.sns-icons img{
-   margin: 5px;
-}
-.search1 {
-    border-radius: 20px;
-    padding: 5px;
-    /* Thêm các thuộc tính kiểu khác nếu cần */
-}

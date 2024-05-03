@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style: none;
+}
+img{
+    border: none;
+    vertical-align: top;
+}
+a:link{
+    text-decoration: none;
+    color: #ff0000
+}
+
+a:hover{
+    color: green;
+}
+header{
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a7d4ec;
+}
+h1{
+padding: 0 5px 0 5px;
+}
+h2 {
+    position: relative;
+    margin: 10px;
+  }
+  
+  h2:after {
+
+    content: '';
+    display: block;
+    width: 50px; /* Điều chỉnh chiều rộng của dòng sau */
+    height: 2px; /* Điều chỉnh chiều cao của dòng sau */
+    background-color: #333; /* Điều chỉnh màu sắc của dòng sau */
+    position: absolute;
+    top: 100%; /* Di chuyển dòng sau xuống dưới phần tử h2 */
+    left: 0;
+    border-bottom: 1px solid #333; /* Điều chỉnh chiều rộng và màu sắc của gạch chân */
+    display: inline-block; /* Để gạch chân chỉ chiếm chiều rộng của nội dung h2 */
+    padding-bottom: 5px; /* Điều chỉnh khoảng cách giữa văn bản và gạch chân */
+  }
+nav ul, li {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight:  bold;
+}
+main{
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+    min-height: 480px;
+}
+
+footer img{
+    padding-top: 5px;
+}
+footer{
+    width: 100%;
+    padding: 0;
+    background-color: #a7d4ec;
+    text-align: center;
+}
+.sns-icons{
+    width: 100%;
+}
+.sns-icons img{
+   margin: 5px;
+}
+.menu-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+.item{
+    width: 20%;
+    max-height: 200px;
+    min-height: 200px;
+    margin: 5px;
+    border: 2px solid #ddd; /* Thiết lập màu đường viền nhạt hơn */
+    border-radius: 8px; /* Thêm độ cong cho góc đường viền */
+    overflow: hidden; /* Đảm bảo độ cong của đường viền được áp dụng cho hình ảnh */
+    transition: border 0.3s ease; /* Thêm hiệu ứng chuyển động cho trải nghiệm mượt mà */
+}
+.item-image{
+    width: 100%;
+}
+.item-info{
+    padding: 5px 0 5px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.price{
+    font-weight: bold;
+}
+.search1 {
+    border-radius: 20px;
+    padding: 5px;
+    /* Thêm các thuộc tính kiểu khác nếu cần */
+}
