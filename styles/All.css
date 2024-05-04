@@ -119,6 +119,19 @@
         background-color: #f0f0f0;
     }
 
+    .support {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 15px 15px;
+        display: flex; /* Sử dụng flexbox để căn chỉnh văn bản giữa */
+        justify-content: left; /* Căn giữa theo chiều ngang */
+        align-items: center; /* Căn giữa theo chiều dọc */
+        transition: background-color 0.3s ease;
+        opacity: 0.5;
+    }
+
+
 
     .logo-container {
         flex: 0 0 auto; /* Không co giãn, không co nhỏ */
