@@ -8,8 +8,8 @@
   
   .product-item {
     position: relative;
-    width: 200px; /* Chiều rộng tùy ý */
-    height: 150px; /* Chiều cao tùy ý */
+    width: 350px; /* Chiều rộng tùy ý */
+    height: 200px; /* Chiều cao tùy ý */
     flex-shrink: 0; /* Ngăn không cho các mục thu nhỏ khi không đủ không gian */
     margin-right: 10px; /* Khoảng cách giữa các mục */
     border: 1px solid #ccc; /* Viền cho mục */
