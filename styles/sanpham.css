@@ -1,0 +1,8 @@
+h2{
+    font-size: 15px; /* Kích thước chữ */
+    font-weight: bold; /* Độ đậm */
+    color: #333; /* Màu chữ */
+    text-decoration: underline red 5px; /* Gạch dưới tất cả các chữ */
+    text-align: left; /* Căn giữa văn bản */
+    line-height: 1.5; /* Khoảng cách dòng */
+}
