@@ -118,8 +118,7 @@
     .nav-menu ul li a:hover {
         background-color: #f0f0f0;
     }
-
-    .support {
+    .hotro{
         text-decoration: none;
         color: #333;
         font-weight: bold;
@@ -129,9 +128,19 @@
         align-items: center; /* Căn giữa theo chiều dọc */
         transition: background-color 0.3s ease;
         opacity: 0.5;
+        border-bottom: none;
     }
 
 
+    .support {
+        display: flex; /* Sử dụng flexbox để căn chỉnh nội dung */
+        align-items: center; /* Căn giữa theo chiều dọc */
+        border-bottom: none;
+    }
+    .nav-menu .support a {
+        border-bottom: none;
+    }
+    
 
     .logo-container {
         flex: 0 0 auto; /* Không co giãn, không co nhỏ */
