@@ -145,11 +145,15 @@
 
       header{
         border-bottom: solid #76c5bf 1.5px;
+        margin-left: 0.5px;
+        margin-right: 0.5px;
       }
 
 
     /* Thiết kế body */
     body {
+        margin-left: 0.5px;
+        margin-right: 0.5px;
         font-family: Arial, Helvetica, sans-serif;
         margin: 0;
         padding: 0;
@@ -157,6 +161,8 @@
 
     /* Thiết kế footer */
     footer {
+        margin-left: 0.5px;
+        margin-right: 0.5px;
         border-top: solid rgb(234, 216, 216) 0.55px;
         text-align: center;
         padding: 10px;
