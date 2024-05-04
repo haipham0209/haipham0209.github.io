@@ -32,8 +32,9 @@
         border: none;
         cursor: pointer;
         padding: 0;
-        width: 40px;
+        width: 100%;
         height: 40px;
+        justify-content: right;
     }
 
     .menu-icon {
@@ -111,10 +112,6 @@
         transition: background-color 0.3s ease;
         border-bottom: solid rgb(165, 165, 173) 1px;
     }
-    
-
-    
-
     .nav-menu ul li a:hover {
         background-color: #f0f0f0;
     }
@@ -136,6 +133,7 @@
         display: flex; /* Sử dụng flexbox để căn chỉnh nội dung */
         align-items: center; /* Căn giữa theo chiều dọc */
         border-bottom: none;
+        width: 100%;
     }
     .nav-menu .support a {
         border-bottom: none;
@@ -154,7 +152,7 @@
 
       header{
         border-bottom: solid #76c5bf 1.5px;
-        margin-left: 0.5px;
+        margin-left: 0.7px;
         margin-right: 0.5px;
       }
 
