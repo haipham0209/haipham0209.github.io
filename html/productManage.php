@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -5,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Của Hàng Tạp Hóa Thừa Vân</title>
   <link rel="stylesheet" href="../styles/All.css">
-  <link rel="stylesheet" href="../styles/sanpham.css">
+  <link rel="stylesheet" href="../styles/productM.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -35,8 +36,28 @@
   </header>
 
   <main>
+<h2>
+    Hello PRODUCT MANAGER
+</h2>
+    <button id="cameraButton" onclick="startCamera()">Khởi Động Camera</button>
+    <video id="videoElement" width="400" height="300" style="display:none;"></video>
+    <script>
+        async function startCamera() {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true });
 
-  </main>
+                const videoElement = document.getElementById('videoElement');
+                videoElement.srcObject = stream;
+
+                videoElement.onloadedmetadata = (e) => {
+                    videoElement.play();
+                };
+            } catch (error) {
+                console.error('Không thể truy cập camera:', error);
+            }
+        }
+    </script>
+    </main>
   <footer>
     <a href="../index.html"><img src="../images/Untitled.png" alt="logo" width="200" height="110 "></a>
     <div class="sns-icons">
@@ -49,3 +70,4 @@
 <script src="../scripts/index.js"></script>
 </body>
 </html>
+
