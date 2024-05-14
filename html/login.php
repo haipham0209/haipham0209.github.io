@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <main>
     <h2>
-        Đăng Nhập quản lý thông tin sản phẩm
+        Đăng Nhập quản lý thông tin sản phẩmMMM
     </h2>
     <form method="post">
         <label for="username">Tên đăng nhập:</label>
@@ -65,7 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <label for="password">Mật khẩu:</label>
         <input type="password" id="password" name="password" required>
         <?php
-        // Hiển thị thông báo lỗi nếu có
+        // Hiển thị thông báo lỗi nếu có HHH
         if (!empty($error)) {
             echo "<p style='color: red;'>$error</p>";
             $error="";
